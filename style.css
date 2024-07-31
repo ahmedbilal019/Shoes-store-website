@@ -1,0 +1,128 @@
+body{
+    font-family: "Lato", sans-serif, serif;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    height: 40px;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+
+}
+.navbarTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput{
+    border:none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.navbarBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin-right: 25px;
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 400;
+}
+.slider{
+    background: url("https://images.pexels.com/photos/3816350/pexels-photo-3816350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+.slideBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    right: 25%;
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
+}
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right:15%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    z-index: 1;
+}
+.buyButton:hover{
+background-color: whitesmoke;
+color: black;
+}
+.sliderItem:nth-child(1) .slideBg{
+  background-color: rgb(53, 100, 231);
+}
+.sliderItem:nth-child(2) .slideBg{
+    background-color: rgb(73, 224, 80);
+  }
+  .sliderItem:nth-child(3) .slideBg{
+    background-color: rgb(231, 160, 53);
+  }
+  .sliderItem:nth-child(4) .slideBg{
+    background-color: rgb(233, 255, 39);
+  }
+  .sliderItem:nth-child(5) .slideBg{
+    background-color: rgb(85, 219, 213);
+  }
+        
