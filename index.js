@@ -82,14 +82,14 @@ let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
-const currentProductColors = document.querySelector(".color");
-const currentProductSizes = document.querySelector(".size");
+const currentProductColors = document.querySelectorAll(".color");
+const currentProductSizes = document.querySelectorAll(".size");
 
 
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
         /// changing the slides of product
-        wrapper.style.transform =`translateX(${-100 * index}vw)`;
+        wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
         /// changing the choosen product
         choosenProduct = products[index];
@@ -105,3 +105,19 @@ menuItems.forEach((item, index) => {
         });
     });
 });
+/// changing the product images for different colors
+currentProductColors.forEach((color, index) => {
+    color.addEventListener("click", () => {
+        currentProductImg.src = choosenProduct.colors[index].img;
+    });
+});
+currentProductSizes.forEach((size, index) => {
+    size.addEventListener("click", () => {
+        currentProductSizes.forEach((size) => {
+            size.style.backgroundColor = "white";
+            size.style.color = "black";
+        })
+        size.style.backgroundColor = "blue";
+        size.style.color = "white";
+    })
+})
