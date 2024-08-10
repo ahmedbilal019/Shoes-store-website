@@ -67,6 +67,7 @@ nav {
     background: url("https://images.pexels.com/photos/2273488/pexels-photo-2273488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 84%);
     overflow: hidden;
+
 }
 
 .sliderWrapper {
@@ -187,7 +188,7 @@ nav {
 }
 
 .product {
-    height: 100vh;
+    height: 150vh;
     background-color: whitesmoke;
     position: relative;
     clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
@@ -269,8 +270,8 @@ nav {
     padding: 10px 50px;
     display: none;
     flex-direction: column;
-    -webkit-box-shadow: 0px 5px 24px 5px rgba(0,0,0,0.62); 
-box-shadow: 0px 5px 24px 5px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 0px 5px 24px 5px rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 5px 24px 5px rgba(0, 0, 0, 0.62);
 }
 
 .payTitle {
@@ -278,7 +279,7 @@ box-shadow: 0px 5px 24px 5px rgba(0,0,0,0.62);
     color: darkgray;
 }
 
-lable{
+lable {
     font-size: 14px;
     font-weight: 400;
 }
@@ -289,22 +290,27 @@ lable{
     margin: 10px 0px;
     padding: 10px;
 }
+
 .payInput::placeholder {
     color: lightgray;
 }
+
 .cardIcons {
     display: flex;
 }
+
 .cardIcon {
     width: 40px;
     margin-right: 10px;
 }
+
 .cardInfor {
     display: flex;
     justify-content: space-between;
 }
-.sm{
-    width:27%;
+
+.sm {
+    width: 27%;
 }
 
 .payButton {
@@ -317,10 +323,11 @@ lable{
     color: white;
     border: none;
     cursor: pointer;
-    -webkit-box-shadow: 0px 5px 24px 5px rgba(47,188,2,0.62); 
-box-shadow: 0px 5px 24px 5px rgba(47,188,2,0.62);
+    -webkit-box-shadow: 0px 5px 24px 5px rgba(47, 188, 2, 0.62);
+    box-shadow: 0px 5px 24px 5px rgba(47, 188, 2, 0.62);
 }
-.close{
+
+.close {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -334,91 +341,210 @@ box-shadow: 0px 5px 24px 5px rgba(47,188,2,0.62);
     justify-content: center;
     cursor: pointer;
     padding: 3px;
-    
+
 }
-.gallery{
+
+.gallery {
     padding: 50px;
     display: flex;
 }
-.galleryItem{
-   flex: 1;
+
+.galleryItem {
+    flex: 1;
     padding: 50px;
 }
-.galleryImg{
-   width: 100%;
+
+.galleryImg {
+    width: 100%;
 }
-.newSeason{
-display: flex;
+
+.newSeason {
+    display: flex;
 }
-.nsItem{
-   flex: 1;
-   background: black;
-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+
+.nsItem {
+    flex: 1;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.nsImg{
+
+.nsImg {
     width: 100%;
     height: 500px;
 }
-.nsTitle{
+
+.nsTitle {
     font-size: 40px;
 }
-.nsButton{
+
+.nsButton {
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
 }
-footer{
+
+footer {
     display: flex;
 }
-.footerLeft{
+
+.footerLeft {
     flex: 2;
     display: flex;
     justify-content: space-between;
     padding: 50px;
 }
 
-.fMenuTitle{
+.fMenuTitle {
     font-size: 16px;
 }
-.fMenuList{
-   padding: 0;
-   list-style: none; 
+
+.fMenuList {
+    padding: 0;
+    list-style: none;
 }
-.fListItem{
+
+.fListItem {
     margin-bottom: 10px;
     color: gray;
     cursor: pointer;
 }
-.footerRight{
-flex: 1;
-padding: 50px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+
+.footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.fInput{
+
+.fInput {
     padding: 5px;
 }
-.fButton{
+
+.fButton {
     padding: 5px;
     background-color: black;
     color: white;
 }
-.fIcons{
+
+.fIcons {
     display: flex;
 
 }
-.fIcon{
+
+.fIcon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
-.copyright{
+
+.copyright {
     font-weight: 400;
     font-size: 14px;
+}
+
+@media screen and (max-width:480px) {
+    nav {
+        padding: 0;
+        width: 100vw;
+
+    }
+      .search {
+        display: none;
+    }
+
+    .navbarBottom {
+        flex-wrap: wrap;
+    }
+
+    .menuItem{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .slider{
+        clip-path: none;
+        
+    } 
+    .sliderImg{
+        width: 90%;
+    }
+    .slideBg{
+        width: 100%;
+        height: 100%;
+    }
+    .sliderTitle{
+        display: none;
+    }
+    .sliderPrice{
+        top: unset;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+        background-color: lightgray;
+    }
+    .buyButton{
+       top: unset;
+       right: 0;
+       top: 0;
+    } 
+   .features{
+    flex-direction: column;
+    
+   }
+   .product{
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:150vh;
+    
+   }
+   .productDetails{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .productTitle{
+    font-size: 50px;
+    margin: 0;
+    margin-top: 100px;
+   }
+   .productImg{
+    width: 60%;
+   }
+   .payment{
+    width:98%;
+    height: 90%;
+    padding: 0;
+   }
+
+  .gallery{
+    flex-direction: column;
+  }
+  .galleryItem{
+    padding: 5px;
+  }
+  .galleryTitle{
+    font-size: 20px;
+  }
+  .newSeason{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+    
+  }
+  .footerLeft {
+   padding: 10px;
+  }
 }
