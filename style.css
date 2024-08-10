@@ -523,7 +523,7 @@ footer {
    }
    .payment{
     width:98%;
-    height: 90%;
+    height: 85%;
     padding: 0;
    }
 
@@ -547,4 +547,5 @@ footer {
   .footerLeft {
    padding: 10px;
   }
+
 }
